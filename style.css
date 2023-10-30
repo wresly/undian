@@ -1,0 +1,182 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Hide the default scrollbars by making them transparent */
+::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.fade-in {
+    animation: fadeIn 1s;
+}
+
+.hide {
+    display: none !important;
+}
+button{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+    
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+    width: 100vw;
+
+    background-color: #e0dfdf;
+}
+
+.header {
+    width: 70vw;
+}
+
+#input,
+#input2 {
+    margin-bottom: 10px;
+    padding: 8px 25px;
+
+    border: none;
+    border-radius: 5px;
+
+    background-color: rgb(89, 174, 3);
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+.result {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 30px;
+    width: 70vw;
+    height: 80vh;
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+    overflow: auto;
+
+    background-color: #fff;
+}
+
+.result h1{
+    color: red;
+}
+
+.result h2{
+    color: rgb(0, 195, 255);
+}
+.result img{
+    width: 243px;
+    height: 205px;
+}
+
+
+.result-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 40px;
+    width: 100%;
+}
+
+.result-child hr {
+    margin: 0 20px;
+}
+
+.result-child span {
+    width: 100px;
+    height: 50px;
+    line-height: 50px;
+
+    text-align: center;
+
+    border-radius: 5px;
+    /* padding: 25px; */
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+    background-color: white;
+}
+
+hr {
+    width: 50%;
+    height: 1px;
+    background-color: black;
+}
+
+#start {
+    margin-top: 25px;
+    padding: 8px 25px;
+
+    border: none;
+    border-radius: 5px;
+
+    background-color: rgb(0, 162, 255);
+    color: white;
+    font-weight: bold;
+
+}
+
+
+.inputan-sekolah {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+
+    background-color: rgba(0, 0, 0, 0.347);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.inputan-body {
+    height: 40vh;
+    width: 30vw;
+
+    padding: 30px;
+
+    border-radius: 30px;
+    background-color: white;
+}
+
+@media only screen and (max-width: 1000px) {
+    .inputan-body {
+        height: 40vh;
+        width: 60vw;
+    }
+    
+}
+
+textarea {
+    width: 100%;
+    height: 80%;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-size: 16px;
+    resize: none;
+}
