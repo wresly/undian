@@ -26,7 +26,7 @@ startBtn.addEventListener("click", async function () {
         fadeInSound.play()
         peserta.splice(rand1, 1)
         peserta.splice(rand2 > rand1 ? rand2 - 1 : rand2, 1);
-        await delay(2500); 
+        await delay(2500);
 
     }
 })
@@ -72,9 +72,10 @@ input2Btn.addEventListener("click", function () {
 
     // remove old result
     const elementsToRemove = document.querySelectorAll('.result-child');
-    elementsToRemove.forEach(function (element) {
-        element.remove();
-    });
+    // Start from the second element (index 1) and remove the rest
+    for (let i = 1; i < elementsToRemove.length; i++) {
+        elementsToRemove[i].remove();
+    }
 
     // hide form
     listSekolahFrm.classList.toggle("hide")
